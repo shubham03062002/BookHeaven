@@ -1,0 +1,319 @@
+
+  /* Profile Title */
+  .profile-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* User Info */
+  .user-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  /* Favorite Books Section */
+  .favorites-section {
+    margin-top: 20px;
+  }
+  
+  .favorites-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  /* Book List */
+  .book-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Book Card */
+  .book-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Book Image */
+  .book-image {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Book Info */
+  .book-info {
+    flex: 1;
+  }
+  
+  .book-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .book-author {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .book-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  /* Button Group */
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .remove-btn:hover {
+    background: darkred;
+  }
+  
+  /* Add to Cart Button */
+  .cart-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .cart-btn:hover {
+    background: darkblue;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  /* No Books */
+  .no-books {
+    text-align: center;
+    color: gray;
+  }
+  
+  /* ----------------------------------- */
+
+  /* cart */
+
+  /* Cart Container */
+.cart-container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Cart Title */
+  .cart-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Cart List */
+  .cart-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Cart Item */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Book Image */
+  .cart-book-image {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Book Info */
+  .cart-book-info {
+    flex: 1;
+  }
+  
+  .cart-book-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cart-book-author {
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .cart-book-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+  }
+  
+  /* Remove Button */
+  .remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .remove-btn:hover {
+    background: darkred;
+  }
+  
+  /* Cart Total */
+  .cart-total {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .cart-total h3 {
+    font-size: 18px;
+  }
+  
+  /* Make Order Button */
+  .order-btn {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .order-btn:hover {
+    background: darkblue;
+  }
+  
+  /* No Items */
+  .no-items {
+    text-align: center;
+    color: gray;
+    font-size: 16px;
+  }
+  
+
+  /* .......................... */
+
+  /* updatemodal */
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* AdminDashBoard */
+
+.admin-dashboard {
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.edit-icon {
+  color: blue;
+}
+
+.delete-icon {
+  color: red;
+}

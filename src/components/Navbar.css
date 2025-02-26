@@ -1,0 +1,171 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+  }
+  .bookheaven{
+    font-size: 120px;
+    color: #4caf50;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    /* height: 40px; */
+    margin-right: 10px;
+  }
+  
+  .nav-container {
+    display: flex; /* Changed from display: none to display: flex */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-container.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    gap:0px;
+    padding: 0;
+    display: flex; /*Added this line*/
+  }
+  
+  .nav-links li {
+    margin-left: 1rem;
+    /* padding: 1rem 0; */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    /* padding: 0.5rem 1rem; */
+  }
+  
+  .active-link {
+    font-weight: bold;
+    border-bottom: 2px solid blue;
+  }
+  
+  .desktop-buttons {
+    display: flex;
+  }
+  
+  .desktop-buttons button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .signup-btn {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .logout-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+  
+  .close-icon {
+    font-size: 1.5rem;
+  }
+  
+  .mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-buttons button {
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-container {
+      display: none; /*Hide on mobile, and only show when active*/
+    }
+  .log span{
+    font-size: medium;
+  }
+    .nav-container.active {
+      display: block;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+    /* .hamburger:hover{
+        color: #ea1818;
+        background-color: #d28ee6;    } */
+
+  
+    .desktop-buttons {
+      display: none;
+    }
+
+    .navbar {
+      position: fixed;
+      top:0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+      }
+      .nav-container.active {
+        display: block;
+        margin-top: 25px;
+      }
+      .bookheaven{
+        font-size: 20px;
+      }
+      .hamburger .close-icon{
+        color:red;
+        
+      }
+      .hamburger.close-icon:hover{
+        color:rgb(233, 100, 11);
+        background-color: palevioletred;
+        
+      }
+  }
