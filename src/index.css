@@ -646,7 +646,7 @@ li {
 
 @media (max-width: 770px) {
 
-  .cart-container,{
+  .cart-container{
     margin-top: 116px;
   }
 }
